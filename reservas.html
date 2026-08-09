@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Hotel Pet - Pets</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <img src="imagens/logo.png" alt="Hotel Pet">
+    <p>Hotel Pet</p>
+    <nav>
+        <a href="pets.html">Pet</a>
+        <a href="usuarios.html">Usuários</a>
+        <a href="configuracoes.html">Configurações</a>
+        <a href="reservas.html">Reservas</a>
+    </nav>
+    <a href="perfil.html">
+        <img src="imagens/avatar-exemplo.png" alt="Foto do usuário logado">
+        Nome do Gerente
+    </a>
+</header>
+
+<main>
+
+    </p><a href="reserva-nova.html">+ Nova reserva</a>
+
+    <form>
+        <label for="busca-id">Id</label>
+        <input type="text" id="busca-id" name="busca-id">
+
+        <label for="busca-chegada">Data de chegada</label>
+        <input type="date" id="busca-chegada" name="busca-chegada">
+
+        <label for="busca-partida">Data de partida</label>
+        <input type="date" id="busca-partida" name="busca-partida">
+
+        <label for="busca-proprietario">Proprietário</label>
+        <input type="text" id="busca-proprietario" name="busca-proprietario">
+
+        <label for="busca-total-min">Total mínimo</label>
+        <input type="number" id="busca-total-min" name="busca-total-min" min="0">
+
+        <label for="busca-total-max">Total máximo</label>
+        <input type="number" id="busca-total-max" name="busca-total-max" min="0">
+
+        <label for="busca-status">Status</label>
+        <select id="busca-status" name="busca-status">
+            <option value="">Todos</option>
+            <option value="reservado">Reservado</option>
+            <option value="andamento">Em andamento</option>
+            <option value="cancelado">Cancelado</option>
+            <option value="finalizado">Finalizado</option>
+        </select>
+
+        <label for="busca-pet">Pet</label>
+        <input type="text" id="busca-pet" name="busca-pet">
+
+        <button type="submit">Pesquisar</button>
+        <button type="reset">Limpar</button>
+    </form>
+
+    <table>
+        <thead>
+        <tr>
+            <th><input type="checkbox" id="selecionar-todas-reservas"></th>
+            <th>Id</th>
+            <th>Pet</th>
+            <th>Chegada</th>
+            <th>Partida</th>
+            <th>Status</th>
+            <th>Total</th>
+            <th>Ações</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td><input type="checkbox"></td>
+            <td>10</td>
+            <td>Rex</td>
+            <td>01/07/2026</td>
+            <td>05/07/2026</td>
+            <td>Finalizado</td>
+            <td>R$ 400,00</td>
+            <td>
+                <a href="reserva-editar.html">Editar</a>
+                <a href="reserva-visualizar.html">Visualizar</a>
+            </td>
+        </tr>
+        <!-- gerente vê "Editar" mesmo em linhas Finalizado -->
+        </tbody>
+    </table>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 Hotel Pet</p>
+</footer>
+</body>
+</html>
