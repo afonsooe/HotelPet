@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Hotel Pet - Pets</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <img src="imagens/logo.png" alt="Hotel Pet">
+    <p>Hotel Pet</p>
+    <nav>
+        <a href="pets.html">Pet</a>
+        <a href="usuarios.html">Usuários</a>
+        <a href="configuracoes.html">Configurações</a>
+        <a href="reservas.html">Reservas</a>
+    </nav>
+    <a href="perfil.html">
+        <img src="imagens/avatar-exemplo.png" alt="Foto do usuário logado">
+        Nome do Gerente
+    </a>
+</header>
+
+<main>
+
+    <p><a href="reservas.html">Home</a> / Usuário</p>
+
+
+    <nav>
+        <a href="usuarios.html">Usuários</a>
+        <a href="#">Função</a> <!-- pendência #3: comportamento a confirmar -->
+    </nav>
+
+    <a href="usuario-novo.html">novo</a>
+    <button type="button">Remover</button>
+    <button type="button">Mudar status</button>
+
+    <form>
+        <label for="busca-id">Id</label>
+        <input type="text" id="busca-id" name="busca-id">
+
+        <label for="busca-criado-inicio">Criado em (início)</label>
+        <input type="date" id="busca-criado-inicio" name="busca-criado-inicio">
+
+        <label for="busca-criado-fim">Criado em (fim)</label>
+        <input type="date" id="busca-criado-fim" name="busca-criado-fim">
+
+        <label for="busca-email">Email</label>
+        <input type="email" id="busca-email" name="busca-email">
+
+        <label for="busca-nome">Nome</label>
+        <input type="text" id="busca-nome" name="busca-nome">
+
+        <label for="busca-status">Status</label>
+        <select id="busca-status" name="busca-status">
+            <option value="">Todos</option>
+            <option value="ativo">Ativo</option>
+            <option value="inativo">Inativo</option>
+        </select>
+
+        <label for="busca-funcao">Função</label>
+        <select id="busca-funcao" name="busca-funcao">
+            <option value="">Todos</option>
+            <option value="cliente">Cliente</option>
+            <option value="funcionario">Funcionário</option>
+            <option value="gerente">Gerente</option>
+        </select>
+
+        <button type="submit">Pesquisar</button>
+        <button type="reset">Limpar</button>
+    </form>
+
+    <table>
+        <thead>
+        <tr>
+            <th><input type="checkbox" id="selecionar-todos-usuarios"></th>
+            <th>Foto</th>
+            <th>Email</th>
+            <th>Nome</th>
+            <th>Função</th>
+            <th>Status</th>
+            <th>Criado em</th>
+            <th>Ações</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td><input type="checkbox"></td>
+            <td><img src="imagens/avatar-exemplo.png" alt="Foto de Maria Silva"></td>
+            <td>maria@email.com</td>
+            <td>Maria Silva</td>
+            <td>Cliente</td>
+            <td>Ativo</td>
+            <td>10/05/2026</td>
+            <td>
+                <a href="usuario-editar.html">Editar</a>
+                <a href="usuario-visualizar.html">Visualizar</a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 Hotel Pet</p>
+</footer>
+</body>
+</html>
