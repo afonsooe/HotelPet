@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Hotel Pet - Pets</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <img src="imagens/logo.png" alt="Hotel Pet">
+    <p>Hotel Pet</p>
+    <nav>
+        <a href="pets.html">Pet</a>
+        <a href="usuarios.html">Usuários</a>
+        <a href="configuracoes.html">Configurações</a>
+        <a href="reservas.html">Reservas</a>
+    </nav>
+    <a href="perfil.html">
+        <img src="imagens/avatar-exemplo.png" alt="Foto do usuário logado">
+        Nome do Gerente
+    </a>
+</header>
+
+<main>
+
+    <p><a href="reservas.html">Home / Reserva </a> / Editar Reserva</p>
+
+    <form>
+        <label for="proprietario">Proprietário*</label>
+        <input type="text" id="proprietario" name="proprietario" value="Maria Silva" required>
+
+        <label for="pet">Pet*</label>
+        <select id="pet" name="pet" required>
+            <option value="1" selected>Rex</option>
+            <option value="2">Mia</option>
+        </select>
+
+        <label for="chegada">Data de chegada*</label>
+        <input type="date" id="chegada" name="chegada" value="2026-07-01" required>
+
+        <label for="partida">Data de partida*</label>
+        <input type="date" id="partida" name="partida" value="2026-07-05" required>
+
+        <label for="notas">Notas</label>
+        <textarea id="notas" name="notas"></textarea>
+
+        <label for="status">Status*</label>
+        <select id="status" name="status" required>
+            <option value="reservado">Reservado</option>
+            <option value="andamento">Em andamento</option>
+            <option value="cancelado">Cancelado</option>
+            <option value="finalizado" selected>Finalizado</option>
+        </select>
+
+        <label for="anotacoes-funcionario">Anotações do funcionário</label>
+        <textarea id="anotacoes-funcionario" name="anotacoes-funcionario"></textarea>
+
+        <fieldset>
+            <legend>Imagens</legend>
+            <img src="imagens/reserva-foto1.png" alt="Foto enviada da estadia 1">
+            <img src="imagens/reserva-foto2.png" alt="Foto enviada da estadia 2">
+            <label for="nova-imagem">Adicionar imagem</label>
+            <input type="file" id="nova-imagem" name="nova-imagem" accept="image/*">
+        </fieldset>
+
+        <label for="total">Total das diárias</label>
+        <input type="text" id="total" name="total" value="R$ 400,00" readonly>
+
+        <!-- Bloco condicional: exibido quando Status = Finalizado -->
+        <fieldset>
+            <legend>Nota Fiscal</legend>
+            <label for="nota-fiscal">Adicionar nota fiscal</label>
+            <input type="file" id="nota-fiscal" name="nota-fiscal">
+            <p><a href="imagens/recibo.pdf">recibo.pdf</a></p>
+        </fieldset>
+
+        <button type="submit">Salvar</button>
+        <button type="reset">Limpar</button>
+    </form>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 Hotel Pet</p>
+</footer>
+</body>
+</html>
