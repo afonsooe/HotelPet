@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Hotel Pet - Pets</title>
+    <title>Hotel Pet - Novo Pet</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -29,6 +29,43 @@
         <a href="pets.html">Pet</a> /
         Novo Pet
     </p>
+
+    <form>
+        <label for="proprietario">Proprietário*</label>
+        <select id="proprietario" name="proprietario" required>
+            <option value="">Selecione</option>
+            <option value="1">Maria Silva</option>
+            <option value="2">João Souza</option>
+        </select>
+
+        <label for="nome-pet">Nome*</label>
+        <input type="text" id="nome-pet" name="nome-pet" required>
+
+        <label for="tipo">Tipo*</label>
+        <select id="tipo" name="tipo" required>
+            <option value="">Selecione</option>
+            <option value="cachorro">Cachorro</option>
+            <option value="gato">Gato</option>
+            <option value="outro">Outro</option>
+        </select>
+
+        <label for="raca">Raça*</label>
+        <input type="text" id="raca" name="raca" required>
+
+        <label for="tamanho">Tamanho*</label>
+        <select id="tamanho" name="tamanho" required>
+            <option value="">Selecione</option>
+            <option value="pequeno">Pequeno</option>
+            <option value="medio">Médio</option>
+            <option value="grande">Grande</option>
+        </select>
+
+        <label for="imagem">Imagem</label>
+        <input type="file" id="imagem" name="imagem" accept="image/*">
+
+        <button type="submit">Salvar</button>
+        <button type="reset">Limpar</button>
+    </form>
 
 </main>
 
