@@ -69,12 +69,9 @@ Como visualizar o projeto
 Como é um site estático, basta abrir o arquivo index.html diretamente no navegador — não é necessário nenhum servidor ou instalação.
 
 
-Clone o repositório:
-
-git clone https://github.com/<seu-usuario>/hotel-pet.git
+Link do GitHub - https://github.com/afonsooe/HotelPet.git
 
 Abra a pasta no navegador ou em um editor de código (ex: IntelliJ IDEA) e abra index.html.
-
 
 Tecnologias utilizadas
 
@@ -83,6 +80,5 @@ HTML5
 CSS3
 
 Nenhuma biblioteca ou framework, conforme exigido pela disciplina
-
 
 Autor: Erivelton Afonso — Programação Web I
