@@ -22,7 +22,7 @@ Acessar o menu Configurações, para definir o valor da diária e o número de v
 
 Estrutura do projeto
 
-hotel-pet/
+HotelPet/
 
 ├── index.html                 # Login
 
