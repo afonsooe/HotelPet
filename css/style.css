@@ -224,3 +224,33 @@ button[type="button"]:hover {
     background-color: #4A2E1E;
     color: #FFFFFF;
 }
+
+/* ===== Tabelas ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 16px;
+    margin-bottom: 24px;
+}
+
+th,
+td {
+    padding: 10px 14px;
+    text-align: left;
+    border: 1px solid #4A2E1E;
+}
+
+thead th {
+    background-color: #2C8C93;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #F7F0E1;
+}
+
+tbody tr:hover {
+    background-color: #E5E0D0;
+}
