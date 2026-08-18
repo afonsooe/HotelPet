@@ -254,3 +254,62 @@ tbody tr:nth-child(even) {
 tbody tr:hover {
     background-color: #E5E0D0;
 }
+
+/* ===== Links de ação (estilo botão) ===== */
+main > a,
+td a {
+    display: inline-block;
+    padding: 8px 16px;
+    margin-top: 8px;
+    margin-right: 8px;
+    background-color: #2C8C93;
+    color: #FFFFFF;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+main > a:hover,
+td a:hover {
+    background-color: #4A2E1E;
+    text-decoration: none;
+}
+
+a[href="#"] {
+    background-color: #B33A3A;
+}
+
+a[href="#"]:hover {
+    background-color: #822929;
+}
+
+/* ===== Breadcrumb ===== */
+main > p:first-child {
+    color: #4A2E1E;
+    font-size: 13px;
+    margin-bottom: 16px;
+}
+
+main > p:first-child a {
+    display: inline;
+    padding: 0;
+    background-color: transparent;
+    color: #2C8C93;
+    font-weight: normal;
+    text-decoration: underline;
+}
+
+main > p:first-child a:hover {
+    background-color: transparent;
+    color: #4A2E1E;
+}
+
+/* ===== Telas de visualização (tabela chave/valor) ===== */
+main table:first-of-type th {
+    width: 200px;
+    background-color: #F7F0E1;
+    text-transform: none;
+    color: #4A2E1E;
+    font-weight: bold;
+}
