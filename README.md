@@ -23,7 +23,7 @@ A visão do Gerente reúne todas as permissões de Cliente e Funcionário, além
 | Etapa | Entrega | Situação |
 |---|---|---|
 | Semana 1 — 21/10 | Navegação | Concluída |
-| Semana 2 — 28/10 | Buscas | A fazer |
+| Semana 2 — 28/10 | Buscas | Concluída |
 | Semana 3 — 04/11 | Tabelas | A fazer |
 
 ### Semana 1 — Navegação
@@ -33,6 +33,15 @@ A visão do Gerente reúne todas as permissões de Cliente e Funcionário, além
 - Telas de cadastro e edição de reservas, pets e usuários: ao salvar, voltam para a listagem correspondente
 
 Como não há backend, qualquer e-mail e senha preenchidos permitem entrar.
+
+### Semana 2 — Buscas
+
+- **Reservas:** pesquisa por id, data de chegada, data de partida, proprietário, total mínimo e máximo, status e pet
+- **Pets:** pesquisa por id, raça, nome e tamanho
+- **Usuários:** pesquisa por id, período de criação, email, nome, status e função
+- Campos em branco são ignorados; ao preencher vários, a linha precisa atender a todos
+- O botão **Limpar** apaga os campos e mostra todas as linhas novamente
+- As tabelas usam dados fictícios, e a busca apenas mostra ou esconde as linhas
 
 ## Estrutura do projeto
 
@@ -62,7 +71,10 @@ HotelPet/
 │   ├── sair.js              # Botão Sair
 │   ├── salvar-reserva.js    # Salvar de reservas volta para a listagem
 │   ├── salvar-pet.js        # Salvar de pets volta para a listagem
-│   └── salvar-usuario.js    # Salvar de usuários volta para a listagem
+│   ├── salvar-usuario.js    # Salvar de usuários volta para a listagem
+│   ├── busca-reservas.js    # Pesquisa de reservas
+│   ├── busca-pets.js        # Pesquisa de pets
+│   └── busca-usuarios.js    # Pesquisa de usuários
 └── imagens/                 # Logo, fotos e ícones
 ```
 
