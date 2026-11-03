@@ -24,7 +24,7 @@ A visão do Gerente reúne todas as permissões de Cliente e Funcionário, além
 |---|---|---|
 | Semana 1 — 21/10 | Navegação | Concluída |
 | Semana 2 — 28/10 | Buscas | Concluída |
-| Semana 3 — 04/11 | Tabelas | A fazer |
+| Semana 3 — 04/11 | Tabelas | Concluída |
 
 ### Semana 1 — Navegação
 
@@ -42,6 +42,15 @@ Como não há backend, qualquer e-mail e senha preenchidos permitem entrar.
 - Campos em branco são ignorados; ao preencher vários, a linha precisa atender a todos
 - O botão **Limpar** apaga os campos e mostra todas as linhas novamente
 - As tabelas usam dados fictícios, e a busca apenas mostra ou esconde as linhas
+
+### Semana 3 — Tabelas
+
+- **Selecionar todos:** a caixa do cabeçalho marca e desmarca as linhas das tabelas de reservas, pets e usuários; depois de uma pesquisa, só as linhas visíveis são marcadas
+- **Usuários:** o botão **Remover** apaga da tabela os usuários marcados (com confirmação) e o botão **Mudar status** alterna entre Ativo e Inativo
+- **Configurações:** o **Salvar** valida o valor da diária e o número de vagas e mostra uma mensagem de confirmação
+- **Editar reserva:** o bloco da nota fiscal só aparece quando o status é Finalizado
+- **Visualizar pet:** o link **Deletar** pede confirmação e volta para a lista de pets
+- Como não há backend, as alterações valem só até recarregar a página
 
 ## Estrutura do projeto
 
@@ -66,15 +75,21 @@ HotelPet/
 ├── css/
 │   └── style.css            # Estilos do site
 ├── js/
-│   ├── login.js             # Navegação do login
-│   ├── criar-conta.js       # Navegação da criação de conta
-│   ├── sair.js              # Botão Sair
-│   ├── salvar-reserva.js    # Salvar de reservas volta para a listagem
-│   ├── salvar-pet.js        # Salvar de pets volta para a listagem
-│   ├── salvar-usuario.js    # Salvar de usuários volta para a listagem
-│   ├── busca-reservas.js    # Pesquisa de reservas
-│   ├── busca-pets.js        # Pesquisa de pets
-│   └── busca-usuarios.js    # Pesquisa de usuários
+│   ├── login.js                 # Navegação do login
+│   ├── criar-conta.js           # Navegação da criação de conta
+│   ├── sair.js                  # Botão Sair
+│   ├── salvar-reserva.js        # Salvar de reservas volta para a listagem
+│   ├── salvar-pet.js            # Salvar de pets volta para a listagem
+│   ├── salvar-usuario.js        # Salvar de usuários volta para a listagem
+│   ├── busca-reservas.js        # Pesquisa de reservas
+│   ├── busca-pets.js            # Pesquisa de pets
+│   ├── busca-usuarios.js        # Pesquisa de usuários
+│   ├── selecionar-todos.js      # Caixa "selecionar todos" das tabelas
+│   ├── remover-usuarios.js      # Botão Remover de usuários
+│   ├── mudar-status-usuarios.js # Botão Mudar status de usuários
+│   ├── configuracoes.js         # Salvar das configurações
+│   ├── reserva-status.js        # Nota fiscal só quando o status é Finalizado
+│   └── deletar-pet.js           # Link Deletar do pet
 └── imagens/                 # Logo, fotos e ícones
 ```
 
