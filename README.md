@@ -47,7 +47,7 @@ Como não há backend, qualquer e-mail e senha preenchidos permitem entrar.
 
 - **Selecionar todos:** a caixa do cabeçalho marca e desmarca as linhas das tabelas de reservas, pets e usuários; depois de uma pesquisa, só as linhas visíveis são marcadas
 - **Usuários:** o botão **Remover** apaga da tabela os usuários marcados (com confirmação) e o botão **Mudar status** alterna entre Ativo e Inativo
-- **Configurações:** o **Salvar** valida o valor da diária e o número de vagas e mostra uma mensagem de confirmação
+- **Configurações:** o **Salvar** mostra uma mensagem de confirmação com o valor da diária e o número de vagas informados (os campos obrigatórios são conferidos pelo próprio navegador)
 - **Editar reserva:** o bloco da nota fiscal só aparece quando o status é Finalizado
 - **Visualizar pet:** o link **Deletar** pede confirmação e volta para a lista de pets
 - Como não há backend, as alterações valem só até recarregar a página
