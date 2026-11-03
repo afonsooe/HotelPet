@@ -8,7 +8,8 @@ function linhaVisivel(caixa) {
 
 // Marcar ou desmarcar a caixa do cabeçalho muda as caixas das linhas visíveis
 caixaTodos.addEventListener('change', function () {
-    caixasLinhas.forEach(function (caixa) {
+    const caixasAtuais = document.querySelectorAll('tbody input[type="checkbox"]');
+    caixasAtuais.forEach(function (caixa) {
         if (linhaVisivel(caixa)) {
             caixa.checked = caixaTodos.checked;
         }
@@ -18,8 +19,9 @@ caixaTodos.addEventListener('change', function () {
 // Se alguma linha visível for desmarcada, a caixa do cabeçalho também desmarca
 caixasLinhas.forEach(function (caixa) {
     caixa.addEventListener('change', function () {
-        let todasMarcadas = true;
-        caixasLinhas.forEach(function (outra) {
+            let todasMarcadas = true;
+        const caixasAtuais = document.querySelectorAll('tbody input[type="checkbox"]');
+        caixasAtuais.forEach(function (outra) {
             if (linhaVisivel(outra) && !outra.checked) {
                 todasMarcadas = false;
             }
